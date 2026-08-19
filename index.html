@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sempara — Créez votre site web sur mesure</title>
+  <meta name="description" content="Sempara transforme vos idées en un site web professionnel. Décrivez votre projet et recevez une maquette personnalisée.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+
+      <header class="hero__header">
+        <a href="#" class="logo" aria-label="Sempara — Accueil">
+          <svg class="logo__mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="ribbonA" x1="20" y1="6" x2="60" y2="55" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#3FD3FF"/><stop offset="1" stop-color="#0F5FD1"/>
+              </linearGradient>
+              <linearGradient id="ribbonB" x1="40" y1="45" x2="82" y2="96" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#0B3FA8"/><stop offset="1" stop-color="#1E88E5"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#ribbonA)" d="M66 8C44-2 18 6 12 24C7 39 16 50 32 53C44 55 52 50 52 42C52 36 46 33 38 34C30 35 26 30 30 24C35 17 48 16 58 20C64 22 66 16 66 8Z"/>
+            <path fill="url(#ribbonB)" d="M34 92C56 102 82 94 88 76C93 61 84 50 68 47C56 45 48 50 48 58C48 64 54 67 62 66C70 65 74 70 70 76C65 83 52 84 42 80C36 78 34 84 34 92Z"/>
+          </svg>
+          <span class="logo__text">sempara</span>
+        </a>
+      </header>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Création de sites web sur mesure · Paris &amp; Dakar</p>
+        <h1 class="hero__title">Votre vision.<br>Notre expertise.<br><span class="hero__accent">Votre succès.</span></h1>
+        <p class="hero__desc">
+          Sempara transforme vos idées en un site web professionnel, élégant et parfaitement adapté à votre activité. Décrivez votre projet en quelques minutes — Mamadou Bathily et son équipe préparent une maquette personnalisée pour vous.
+        </p>
+        <a href="#choix" class="btn btn--primary hero__cta">
+          Créer mon site
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Galerie défilante -->
+      <div class="gallery" aria-hidden="true">
+        <div class="gallery__track">
+          <div class="gallery__item gallery__item--1"><span>Portfolio créatif</span></div>
+          <div class="gallery__item gallery__item--2"><span>Restaurant &amp; café</span></div>
+          <div class="gallery__item gallery__item--3"><span>Cabinet médical</span></div>
+          <div class="gallery__item gallery__item--4"><span>Agence immobilière</span></div>
+          <div class="gallery__item gallery__item--5"><span>Boutique en ligne</span></div>
+          <div class="gallery__item gallery__item--6"><span>Studio d'architecture</span></div>
+          <!-- Duplication pour boucle infinie -->
+          <div class="gallery__item gallery__item--1"><span>Portfolio créatif</span></div>
+          <div class="gallery__item gallery__item--2"><span>Restaurant &amp; café</span></div>
+          <div class="gallery__item gallery__item--3"><span>Cabinet médical</span></div>
+          <div class="gallery__item gallery__item--4"><span>Agence immobilière</span></div>
+          <div class="gallery__item gallery__item--5"><span>Boutique en ligne</span></div>
+          <div class="gallery__item gallery__item--6"><span>Studio d'architecture</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CHOIX DU TYPE ═══════════════════ -->
+  <section id="choix" class="section choix">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Étape 1</p>
+        <h2 class="section__title">Quel type de site<br>correspond à vos besoins ?</h2>
+        <p class="section__desc">Sélectionnez l'option qui reflète le mieux votre projet. Vous pourrez affiner les détails ensuite.</p>
+      </div>
+
+      <div class="cards" role="radiogroup" aria-label="Type de site">
+        <button class="card card--vitrine" data-type="vitrine" role="radio" aria-checked="false" tabindex="0" type="button">
+          <div class="card__visual">
+            <div class="card__mockup card__mockup--vitrine">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-hero"></div>
+              <div class="mockup-blocks"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__badge">Essentiel</div>
+            <h3 class="card__title">Site vitrine</h3>
+            <p class="card__subtitle">Pour présenter efficacement une activité, une marque ou des services.</p>
+            <ul class="card__features">
+              <li>Présenter l'entreprise</li>
+              <li>Présenter les services</li>
+              <li>Présenter les produits</li>
+              <li>Développer sa visibilité en ligne</li>
+              <li>Recevoir des demandes de contact</li>
+              <li>Présenter ses réalisations</li>
+            </ul>
+            <span class="card__select">Sélectionner</span>
+          </div>
+        </button>
+
+        <button class="card card--pro" data-type="professionnel" role="radio" aria-checked="false" tabindex="0" type="button">
+          <div class="card__visual">
+            <div class="card__mockup card__mockup--pro">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-sidebar"></div>
+              <div class="mockup-main">
+                <div class="mockup-hero"></div>
+                <div class="mockup-form"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="card__badge card__badge--pro">Avancé</div>
+            <h3 class="card__title">Site professionnel</h3>
+            <p class="card__subtitle">Pour les entreprises ayant des besoins plus avancés.</p>
+            <ul class="card__features">
+              <li>Présentation complète de l'entreprise</li>
+              <li>Services et produits</li>
+              <li>Prise de rendez-vous</li>
+              <li>Formulaires avancés</li>
+              <li>Espace client ou fonctionnalités spécifiques</li>
+              <li>Intégration d'outils professionnels</li>
+            </ul>
+            <span class="card__select">Sélectionner</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ QUESTIONNAIRE ═══════════════════ -->
+  <section id="questionnaire" class="section questionnaire">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Étape 2</p>
+        <h2 class="section__title">Parlez-nous de<br>votre projet</h2>
+        <p class="section__desc">Quelques informations suffisent pour que nous préparions votre maquette personnalisée.</p>
+      </div>
+
+      <!-- Barre de progression -->
+      <div class="progress" aria-label="Progression du formulaire">
+        <div class="progress__bar">
+          <div class="progress__fill" id="progressFill"></div>
+        </div>
+        <div class="progress__steps">
+          <span class="progress__step progress__step--active" data-step="1">Identité</span>
+          <span class="progress__step" data-step="2">Projet</span>
+        </div>
+      </div>
+
+      <form id="clientForm" class="form" novalidate action="https://formsubmit.co/ajax/sempara.sn@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nouvelle demande Sempara — Maquette site web">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <!-- Étape 1 : Identité -->
+        <fieldset class="form__step form__step--active" data-step="1">
+          <legend class="sr-only">Identité &amp; activité</legend>
+          <h3 class="form__step-title">Identité &amp; activité</h3>
+
+          <div class="form__group">
+            <label for="company">Nom de l'entreprise / marque</label>
+            <input type="text" id="company" name="company" placeholder="Ex. Atelier Lumière" required autocomplete="organization">
+          </div>
+
+          <div class="form__group">
+            <label for="sector">Secteur d'activité</label>
+            <input type="text" id="sector" name="sector" placeholder="Ex. Architecture, restauration, conseil…" required>
+          </div>
+
+          <div class="form__group">
+            <label for="contact">Coordonnées ou moyen de contact</label>
+            <input type="text" id="contact" name="contact" placeholder="Email, téléphone ou site actuel" required autocomplete="email">
+          </div>
+
+          <div class="form__nav">
+            <button type="button" class="btn btn--primary" id="nextStep1">
+              Continuer
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </fieldset>
+
+        <!-- Étape 2 : Projet -->
+        <fieldset class="form__step" data-step="2">
+          <legend class="sr-only">Projet du site</legend>
+          <h3 class="form__step-title">Projet du site</h3>
+
+          <div class="form__group">
+            <label for="siteType">Type de site souhaité</label>
+            <input type="text" id="siteType" name="siteType" readonly placeholder="Sélectionnez un type ci-dessus">
+          </div>
+
+          <div class="form__group">
+            <label for="offerings">Services / produits à présenter</label>
+            <textarea id="offerings" name="offerings" rows="3" placeholder="Décrivez brièvement ce que vous souhaitez mettre en avant…" required></textarea>
+          </div>
+
+          <div class="form__group">
+            <label for="goal">Objectif principal du site</label>
+            <select id="goal" name="goal" required>
+              <option value="" disabled selected>Choisissez un objectif</option>
+              <option value="visibilite">Développer ma visibilité en ligne</option>
+              <option value="contacts">Recevoir des demandes de contact</option>
+              <option value="rdv">Permettre la prise de rendez-vous</option>
+              <option value="vendre">Présenter et vendre mes produits</option>
+              <option value="credibilite">Renforcer ma crédibilité professionnelle</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form__nav">
+            <button type="button" class="btn btn--ghost" id="prevStep2">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M15 9H3M8 14l-5-5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Retour
+            </button>
+            <button type="submit" class="btn btn--primary" id="submitForm">
+              Envoyer ma demande
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONFIRMATION ═══════════════════ -->
+  <section id="confirmation" class="section confirmation" hidden>
+    <div class="container confirmation__inner">
+      <div class="confirmation__icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="24" fill="#EEF0F8"/>
+          <path d="M16 24l5 5 11-11" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h2 class="confirmation__title">Demande bien reçue</h2>
+      <p class="confirmation__desc">
+        Merci ! Nous avons bien reçu vos informations. Mamadou Bathily ou un membre de l'équipe Sempara vous recontactera très prochainement à l'adresse indiquée.
+      </p>
+      <a href="#hero" class="btn btn--ghost" id="restartBtn">Recommencer</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer" aria-label="Sempara — Accueil">
+          <svg class="logo__mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="ribbonA2" x1="20" y1="6" x2="60" y2="55" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#3FD3FF"/><stop offset="1" stop-color="#0F5FD1"/>
+              </linearGradient>
+              <linearGradient id="ribbonB2" x1="40" y1="45" x2="82" y2="96" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#0B3FA8"/><stop offset="1" stop-color="#1E88E5"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#ribbonA2)" d="M66 8C44-2 18 6 12 24C7 39 16 50 32 53C44 55 52 50 52 42C52 36 46 33 38 34C30 35 26 30 30 24C35 17 48 16 58 20C64 22 66 16 66 8Z"/>
+            <path fill="url(#ribbonB2)" d="M34 92C56 102 82 94 88 76C93 61 84 50 68 47C56 45 48 50 48 58C48 64 54 67 62 66C70 65 74 70 70 76C65 83 52 84 42 80C36 78 34 84 34 92Z"/>
+          </svg>
+          <span class="logo__text">sempara</span>
+        </a>
+        <p class="footer__tagline">Votre vision. Notre expertise. <span class="footer__accent">Votre succès.</span></p>
+        <p class="footer__founder">Mamadou Bathily — Fondateur et directeur</p>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__list">
+          <li>
+            <a href="mailto:sempara.sn@gmail.com">sempara.sn@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.sempara.sn" target="_blank" rel="noopener">www.sempara.sn</a>
+          </li>
+          <li><a href="tel:+221778180050">00221 77 818 00 50</a> <span class="footer__label">Sénégal</span></li>
+          <li><a href="tel:+33694911188">0033 6 94 91 11 88</a> <span class="footer__label">France</span></li>
+          <li>116 rue de Charenton, 75012 Paris</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="footer__copy">&copy; 2026 Sempara. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
